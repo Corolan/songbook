@@ -1,2 +1,2 @@
-./tmp/
-./songbook.pdf
+tmp/
+*.pdf
