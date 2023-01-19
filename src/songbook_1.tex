@@ -2,6 +2,12 @@
 \title{Śpiewnik}
 \author{Piotr Gajcy}
 \usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{tabto}  
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
 \usepackage{geometry}
 \geometry{
  a5paper,
@@ -10,13 +16,31 @@
  bottom=20mm,
  right=10mm,
  }
-\setlength{\parindent}{20pt}
+\setlength{\parindent}{0pt}
 
 \usepackage{subfiles}
  
+ \renewcommand{\contentsname}{Spis piosenek}
+ 
 \begin{document}
   
-\maketitle
+\begin{titlepage}
+   \begin{center}
+		\Huge
+       \vspace*{1cm}
+       \textbf{Śpiewnik} \newline \newline \newline
+       \vspace{0.5cm}
+       \Large
+        Piotr Gajcy           
+       \vspace{1.5cm}
+
+       \vfill
+
+       %\includegraphics[width=0.4\textwidth]{university}
+            
+            
+   \end{center}
+\end{titlepage}
   
 \newpage
 
