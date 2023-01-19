@@ -17,10 +17,13 @@
  right=10mm,
  }
 \setlength{\parindent}{0pt}
-
+\usepackage{tocloft}
 \usepackage{subfiles}
- 
- \renewcommand{\contentsname}{Spis piosenek}
+
+\renewcommand\cftsecfont{\footnotesize} 
+\renewcommand\cftsecpagefont{\footnotesize}
+\setlength{\cftbeforesecskip}{0pt}
+\renewcommand{\contentsname}{Spis piosenek}
  
 \begin{document}
   
