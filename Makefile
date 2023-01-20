@@ -1,6 +1,7 @@
 DAT:=`date +"%Y%m%d"`
 SONGLIST:=./tmp/songlist.tmp
 TMP_SONGLIST:=`find ./src/songs/ -type f -name "*.tex"`
+TMP_SONGLIST:=`find ./src/songs/ -type f -name "*.tex" | grep -v Religijne | sort; find ./src/songs/Religijne/ -type f -name "*.tex" `
 
 
 
