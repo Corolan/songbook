@@ -7,12 +7,15 @@ read -p 'nazwa pliku: ' FILE
 TITLE_BIG=`echo ${TITLE^^}`
 
 echo -e "Artist: $ARTIST"
+DIRECTORY=`echo $ARTIST | tr -d '' | sed 'y/ęóąśćłżźńĘÓĄŚĆŁŻŹŃ/eoasclzznEOASCLZZN/' | tr -d ' '`
 echo -e "Song:   $TITLE --- ${TITLE_BIG}"
 echo -e "Album:  $ALBUM"
 
-mkdir -p src/songs/$ARTIST
+SONG_DIR="src/songs/$DIRECTORY"
 
-cat ./bin/new-song-empty.txt | sed  -e "s/TITLE-BIG/${TITLE_BIG}/g" -e "s/ARTIST/${ARTIST}/g" -e "s/ALBUM/${ALBUM}/g" -e "s/TITLE/${TITLE}/g" > src/songs/$ARTIST/${FILE}.tex
+mkdir -p $SONG_DIR
+
+cat ./bin/new-song-empty.txt | sed  -e "s/TITLE-BIG/${TITLE_BIG}/g" -e "s/ARTIST/${ARTIST}/g" -e "s/ALBUM/${ALBUM}/g" -e "s/TITLE/${TITLE}/g" > ${SONG_DIR}/${FILE}.tex
 
 
 exit 0
