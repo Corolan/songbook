@@ -1,15 +1,17 @@
 #/bin/bash
 
 read -p 'Song title: ' TITLE
+FILE=`echo $TITLE | tr -d '' | sed 'y/ęóąśćłżźńĘÓĄŚĆŁŻŹŃ/eoasclzznEOASCLZZN/' | tr -d ' '`
 read -p 'Artist: ' ARTIST
 read -p 'Album: ' ALBUM
-read -p 'nazwa pliku: ' FILE
+#read -p 'nazwa pliku: ' FILE
 TITLE_BIG=`echo ${TITLE^^}`
 
 echo -e "Artist: $ARTIST"
 DIRECTORY=`echo $ARTIST | tr -d '' | sed 'y/ęóąśćłżźńĘÓĄŚĆŁŻŹŃ/eoasclzznEOASCLZZN/' | tr -d ' '`
 echo -e "Song:   $TITLE --- ${TITLE_BIG}"
 echo -e "Album:  $ALBUM"
+echo -e "File:  $FILE"
 
 SONG_DIR="src/songs/$DIRECTORY"
 
