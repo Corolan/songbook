@@ -6,7 +6,7 @@ NUMBER_OF_SONGS:=`find ./src/songs/ -type f -name "*.tex" | wc -l`
 tex: clean
 	@mkdir ./tmp
 	@touch ${SONGLIST}
-	@for i in ${TMP_SONGLIST} ; do echo "\subfile{$${i}}" '\\newpage' >> ${SONGLIST};	done	
+	@for i in ${TMP_SONGLIST} ; do echo "\subfile{$${i}}" '\\newpage' >> ${SONGLIST}; done	
 	@cat ./src/songbook_1.tex | sed -e "s/XXX/${DAT}/" -e "s/YYY/${NUMBER_OF_SONGS}/"  > ./tmp/songbook_1.tmp
 	@cat ./tmp/songbook_1.tmp ${SONGLIST} ./src/songbook_2.tex > ./tmp/songbook.tex
 	
@@ -19,5 +19,4 @@ pdf: tex
 	
 
 clean:
-	@echo ${NUMBER_OF_SONGS}
 	@rm -rf ./tmp
