@@ -11,7 +11,8 @@ tex: clean
 	@cat ./tmp/songbook_1.tmp ${SONGLIST} ./src/songbook_2.tex > ./tmp/songbook.tex
 	
 pdf: tex
-	@pdflatex ./tmp/songbook.tex  > /dev/null 2>&1
+	@rm -rf songbook.pdf
+	@pdflatex ./tmp/songbook.tex  > /dev/null
 	@pdflatex ./tmp/songbook.tex  > /dev/null 2>&1 #second time is necessary for toc
 	@mv songbook.aux  ./tmp/
 	@mv songbook.log  ./tmp/  
