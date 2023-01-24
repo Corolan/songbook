@@ -17,6 +17,7 @@ pdf: tex
 	@mv songbook.aux  ./tmp/
 	@mv songbook.log  ./tmp/  
 	@mv songbook.toc  ./tmp/
+	@mv songbook.out  ./tmp/
 	
 
 clean:

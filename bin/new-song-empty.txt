@@ -2,6 +2,7 @@
 \begin{document}
 \TabPositions{8cm} %indywidualnie dla piosenki
 \section*{TITLE-BIG}
+\phantomsection  
 \addcontentsline{toc}{section}{ARTIST - TITLE}
 \rightline{(ARTIST-"ALBUM")} 
 \vspace{0.5cm}
