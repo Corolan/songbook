@@ -1,7 +1,7 @@
 #/bin/bash
 
 read -p 'Song title: ' TITLE
-FILE=`echo $TITLE | tr -d '' | sed 'y/ęóąśćłżźńĘÓĄŚĆŁŻŹŃ/eoasclzznEOASCLZZN/' | tr -d ' '`
+FILE=`echo $TITLE | tr -d ' ' | sed 'y/ęóąśćłżźńĘÓĄŚĆŁŻŹŃ/eoasclzznEOASCLZZN/' | tr -d ' '`
 read -p 'Artist: ' ARTIST
 read -p 'Album: ' ALBUM
 #read -p 'nazwa pliku: ' FILE
