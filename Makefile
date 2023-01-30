@@ -18,8 +18,6 @@ pdf: tex
 	@mv songbook.toc  ./tmp/
 	@mv songbook.out  ./tmp/
 
-	
-
 clean:
 	@rm -rf ./tmp
 	@rm -rf ./*.pdf

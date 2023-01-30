@@ -15,18 +15,11 @@ user@debian:~/songbook$ tree .
 │   └── **images-files**
 ├── Makefile
 ├── README.md
-├── src
-│   ├── songbook_1.tex
-│   ├── songbook_2.tex
-│   └── songs
-│       ├── **song-files**
-└── tmp
-    ├── songbook_1.tmp
-    ├── songbook.aux
-    ├── songbook.log
-    ├── songbook.out
-    ├── songbook.tex
-    ├── songbook.toc
-    └── songlist.tmp
+└── src
+    ├── songbook_1.tex
+    ├── songbook_2.tex
+    └── songs
+        └── **song-files**
 ```
 ##Usage
+To add a song use `add-new-song.sh` script. It will add an empty file prepared to be filled in directory `src/songs/ARTIST`.
