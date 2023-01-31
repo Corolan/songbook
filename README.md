@@ -21,5 +21,6 @@ user@debian:~/songbook$ tree .
     └── songs
         └── **song-files**
 ```
-##Usage
+## Usage
 To add a song use `add-new-song.sh` script. It will add an empty file prepared to be filled in directory `src/songs/ARTIST`.
+
