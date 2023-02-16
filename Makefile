@@ -1,6 +1,6 @@
 DAT:=`date +"%Y-%m-%d"`
 SONGLIST:=./tmp/songlist.tmp
-TMP_SONGLIST=`find ./src/songs/ -type f -name "*.tex" | grep -v Religijne | grep -v Koledy | sort; find ./src/songs/Religijne/ -type f -name "*.tex" | sort; find ./src/songs/Koledy/ -type f -name "*.tex" | sort`
+TMP_SONGLIST=`find ./src/songs/ -type f -name "*.tex" | grep -v Religijne | grep -v Koledy | grep -v Dzieciece | sort; find ./src/songs/Religijne/ -type f -name "*.tex" | sort; find ./src/songs/Koledy/ -type f -name "*.tex" | sort; find ./src/songs/Dzieciece/ -type f -name "*.tex" | sort`
 NUMBER_OF_SONGS:=`find ./src/songs/ -type f -name "*.tex" | wc -l`
 
 clean:
