@@ -27,7 +27,8 @@
 
 \renewcommand\cftsecfont{\footnotesize} 
 \renewcommand\cftsecpagefont{\footnotesize}
-\setlength{\cftbeforesecskip}{0pt}
+%\setlength{\cftbeforesecskip}{0pt}
+\setlength{\cftbeforesecskip}{5pt}
 \renewcommand{\contentsname}{Spis piosenek}
 
 \usepackage{courier} % \texttt{This is Courier font.}
@@ -56,7 +57,12 @@
 \rightline{Liczba utworów: YYY}  \newline
 \rightline{Wersja: XXX} 
 \newpage
-\tableofcontents
+{\tiny
+%\setlength{\columnsep}{0.7cm}
+%\begin{multicols}{2}
+	\tableofcontents
+%\end{multicols}
+}
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \newpage
 \setcounter{page}{1}
