@@ -1,4 +1,6 @@
+SHELL=/bin/bash
 DAT:=`date +"%Y-%m-%d"`
+PREV_DAT:=`tail -n 1 ./releases/releases.log`
 SONGLIST:=./tmp/songlist.tmp
 TMP_SONGLIST=`find ./src/songs/ -type f -name "*.tex" | grep -v Religijne | grep -v Koledy | grep -v Dzieciece | grep -v Inne | sort; find ./src/songs/Religijne/ -type f -name "*.tex" | sort; find ./src/songs/Koledy/ -type f -name "*.tex" | sort; find ./src/songs/Dzieciece/ -type f -name "*.tex" | sort; find ./src/songs/Inne/ -type f -name "*.tex" | sort`
 NUMBER_OF_SONGS:=`find ./src/songs/ -type f -name "*.tex" | wc -l`
@@ -26,3 +28,23 @@ pdf: tex
 	@mv ./output/songbook.log  ./tmp/  
 	@mv ./output/songbook.toc  ./tmp/
 	@mv ./output/songbook.out  ./tmp/
+
+release: pdf
+	@echo release
+	@mkdir -p releases/${DAT}
+	@echo ${DAT} >> releases/releases.log
+	@echo ${TMP_SONGLIST} | tr " " "\n" > ./releases/${DAT}/songlist.log
+	@cp ./output/songbook.pdf ./releases/${DAT}/
+	@cp ./output/songbook.tex ./releases/${DAT}/
+	
+check-for-changes:
+	@echo Poprzedni release wykonano ${PREV_DAT}
+	@echo ${TMP_SONGLIST} | tr " " "\n" > /tmp/sng.tmp
+	@-diff /tmp/sng.tmp ./releases/${PREV_DAT}/songlist.log | grep "src" > /tmp/diff.log
+	@if [[ `cat /tmp/diff.log` == "" ]]; then \
+		echo "Brak zmian względem poprzedniego release'u"; \
+	else \
+		echo "Znaleziono nowe pliki względem poprzednieo release'u:"; cat /tmp/diff.log; \
+	fi
+
+
