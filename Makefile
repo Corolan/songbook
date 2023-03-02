@@ -44,7 +44,7 @@ check-for-changes:
 	@if [[ `cat /tmp/diff.log` == "" ]]; then \
 		echo "Brak zmian względem poprzedniego release'u"; \
 	else \
-		echo "Znaleziono nowe pliki względem poprzednieo release'u:"; cat /tmp/diff.log; \
+		echo "Znaleziono nowe pliki względem poprzedniego release'u:"; cat /tmp/diff.log; \
 	fi
 
 
