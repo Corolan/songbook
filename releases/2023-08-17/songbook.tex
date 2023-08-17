@@ -1,0 +1,462 @@
+\documentclass{article}
+\title{Śpiewnik}
+\author{Piotr Gajcy}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{tabto}  
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+\usepackage{geometry}
+\geometry{
+ a5paper,
+ left=10mm,
+ top=10mm,
+ bottom=15mm,
+ right=10mm,
+ }
+\setlength{\parindent}{0pt}
+\usepackage{tocloft}
+\usepackage{subfiles}
+
+\pagestyle{empty} %disable page numbering
+
+\renewcommand\cftsecfont{\footnotesize} 
+\renewcommand\cftsecpagefont{\footnotesize}
+%\setlength{\cftbeforesecskip}{0pt}
+\setlength{\cftbeforesecskip}{5pt}
+\renewcommand{\contentsname}{Spis piosenek}
+
+\usepackage{courier} % \texttt{This is Courier font.}
+\usepackage[hidelinks]{hyperref}
+ 
+\begin{document}
+  
+\begin{titlepage}
+  \vspace*{1cm}
+  \begin{center}
+    \centering {\Huge \textbf{Śpiewnik}}
+    \vspace{3.5cm}         
+    \begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.6]{guitar}
+	\end{figure}
+\end{center}
+    \vfill
+   \footnotesize{ \rightline{Powered by \LaTeX}} 
+\end{titlepage}
+  
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\vspace*{\fill} \newline
+\rightline{Liczba utworów: 261}  \newline
+\rightline{Wersja: 2023-08-17} 
+\newpage
+{\tiny
+%\setlength{\columnsep}{0.7cm}
+%\begin{multicols}{2}
+	\tableofcontents
+%\end{multicols}
+}
+\newpage
+{\color{white} empy page   }
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\newpage
+\setcounter{page}{1}
+\subfile{./src/songs/Adele/RollingInTheDeep.tex} \newpage
+\subfile{./src/songs/ChlopcyZPlacuBroni/KiedyJuzBedeDobrymCzlowiekiem.tex} \newpage
+\subfile{./src/songs/ChlopcyZPlacuBroni/KochamWolnosc.tex} \newpage
+\subfile{./src/songs/Coma/DalekaDrogaDoDomu.tex} \newpage
+\subfile{./src/songs/Coma/Ocalenie.tex} \newpage
+\subfile{./src/songs/Coma/Pasazer.tex} \newpage
+\subfile{./src/songs/Coma/StoTysiecyJednakowychMiast.tex} \newpage
+\subfile{./src/songs/Coma/ZaprzepaszczoneSilyWielkiejArmiiSwietychZnakow.tex} \newpage
+\subfile{./src/songs/CzerwoneGitary/JestTakiDzien.tex} \newpage
+\subfile{./src/songs/GreenDay/BoulevardOfBrokenDreams.tex} \newpage
+\subfile{./src/songs/happysad/hymn78.tex} \newpage
+\subfile{./src/songs/happysad/JaDoCiebie.tex} \newpage
+\subfile{./src/songs/happysad/jesli-nie-rozjada-nas-czolgi.tex} \newpage
+\subfile{./src/songs/happysad/JeszczeJeszcze.tex} \newpage
+\subfile{./src/songs/happysad/Koniec.tex} \newpage
+\subfile{./src/songs/happysad/Kostuchna.tex} \newpage
+\subfile{./src/songs/happysad/LudzieChcaUslyszecWiesciZle.tex} \newpage
+\subfile{./src/songs/happysad/Lydka.tex} \newpage
+\subfile{./src/songs/happysad/MilowyLas.tex} \newpage
+\subfile{./src/songs/happysad/MostNaKrzywej.tex} \newpage
+\subfile{./src/songs/happysad/NaSline.tex} \newpage
+\subfile{./src/songs/happysad/PartyzantK.tex} \newpage
+\subfile{./src/songs/happysad/Slonce.tex} \newpage
+\subfile{./src/songs/happysad/TakMijaCzas.tex} \newpage
+\subfile{./src/songs/happysad/WPiwnicyUDziadka.tex} \newpage
+\subfile{./src/songs/happysad/WszystkoJedno.tex} \newpage
+\subfile{./src/songs/happysad/zanim-pojde.tex} \newpage
+\subfile{./src/songs/happysad/ZPamietnikaMlodejZielarki.tex} \newpage
+\subfile{./src/songs/IchTroje/TobaOddychacChce.tex} \newpage
+\subfile{./src/songs/Ira/Nadzieja.tex} \newpage
+\subfile{./src/songs/JacekKaczmarski/SenKatarzynyII.tex} \newpage
+\subfile{./src/songs/JamesBlunt/yourebeautiful.tex} \newpage
+\subfile{./src/songs/Kazik/Malcziki.tex} \newpage
+\subfile{./src/songs/Kopruch/PoProstuBonc.tex} \newpage
+\subfile{./src/songs/Kult/Arahja.tex} \newpage
+\subfile{./src/songs/Kult/Baranek.tex} \newpage
+\subfile{./src/songs/Kult/ChodzcieChlopaki.tex} \newpage
+\subfile{./src/songs/Kult/GdyNieMaDzieci.tex} \newpage
+\subfile{./src/songs/LadyPank/ZawszeTamGdzieTY.tex} \newpage
+\subfile{./src/songs/LadyPank/ZnowuPadaDeszcz.tex} \newpage
+\subfile{./src/songs/LadyPank/ZostawcieTitanica.tex} \newpage
+\subfile{./src/songs/Mika/MyInterpretation.tex} \newpage
+\subfile{./src/songs/Mika/Relax(TakeItEasy).tex} \newpage
+\subfile{./src/songs/Mika/RINGRING.tex} \newpage
+\subfile{./src/songs/Mika/WEAREGOLDEN.tex} \newpage
+\subfile{./src/songs/Musicale/CzlowiekZwierzeciuJestWilkiem.tex} \newpage
+\subfile{./src/songs/Musicale/KramuTegoKrol.tex} \newpage
+\subfile{./src/songs/Musicale/NocMuzykeGra.tex} \newpage
+\subfile{./src/songs/Musicale/SluchajKiedySpiewajLud.tex} \newpage
+\subfile{./src/songs/Musicale/TheMusicOfTheNight.tex} \newpage
+\subfile{./src/songs/MyChemicalRomance/Teenagers.tex} \newpage
+\subfile{./src/songs/Myslovitz/Acidland.tex} \newpage
+\subfile{./src/songs/Myslovitz/Alexander.tex} \newpage
+\subfile{./src/songs/Myslovitz/Aniol.tex} \newpage
+\subfile{./src/songs/Myslovitz/artbrut.tex} \newpage
+\subfile{./src/songs/Myslovitz/BlueVelvet.tex} \newpage
+\subfile{./src/songs/Myslovitz/BuntSzesnastolatki.tex} \newpage
+\subfile{./src/songs/Myslovitz/ChcialbymUmrzecZMilosci.tex} \newpage
+\subfile{./src/songs/Myslovitz/Chlopcy.tex} \newpage
+\subfile{./src/songs/Myslovitz/DlaCiebie.tex} \newpage
+\subfile{./src/songs/Myslovitz/DlugoscDzwiekuSamotnosci.tex} \newpage
+\subfile{./src/songs/Myslovitz/DoUtratyTchu.tex} \newpage
+\subfile{./src/songs/Myslovitz/DwieMysli.tex} \newpage
+\subfile{./src/songs/Myslovitz/FilmowaMilosc.tex} \newpage
+\subfile{./src/songs/Myslovitz/GadajaceGlowy80-06.tex} \newpage
+\subfile{./src/songs/Myslovitz/Gdzies.tex} \newpage
+\subfile{./src/songs/Myslovitz/Glosy.tex} \newpage
+\subfile{./src/songs/Myslovitz/HistoriaJednejZnajomosci.tex} \newpage
+\subfile{./src/songs/Myslovitz/JamesRadioglowiiZukzRewolweremJadaDoNikad.tex} \newpage
+\subfile{./src/songs/Myslovitz/Krakow.tex} \newpage
+\subfile{./src/songs/Myslovitz/KrotkaPiosenkaOMilosci.tex} \newpage
+\subfile{./src/songs/Myslovitz/KsiazkaZDrogaWTytule.tex} \newpage
+\subfile{./src/songs/Myslovitz/Margaret.tex} \newpage
+\subfile{./src/songs/Myslovitz/MiloscWCzasachPopkultury.tex} \newpage
+\subfile{./src/songs/Myslovitz/Myslovitz.tex} \newpage
+\subfile{./src/songs/Myslovitz/my.tex} \newpage
+\subfile{./src/songs/Myslovitz/Nienawisc.tex} \newpage
+\subfile{./src/songs/Myslovitz/NigdyNieZnajdzieszSObiePrzyjaciolJesliNieBedzieszTakiJakWszyscy.tex} \newpage
+\subfile{./src/songs/Myslovitz/NocnymPociagiemAzDoKoncaSwiata.tex} \newpage
+\subfile{./src/songs/Myslovitz/Noc.tex} \newpage
+\subfile{./src/songs/Myslovitz/OfiaryZapasciTeatruTelewizji.tex} \newpage
+\subfile{./src/songs/Myslovitz/PeggyBrown.tex} \newpage
+\subfile{./src/songs/Myslovitz/PeggySueNieWyszlaZaMaz.tex} \newpage
+\subfile{./src/songs/Myslovitz/PocztowkaZLotniska.tex} \newpage
+\subfile{./src/songs/Myslovitz/PredzejPozniejDalej.tex} \newpage
+\subfile{./src/songs/Myslovitz/Przebudzenie.tex} \newpage
+\subfile{./src/songs/Myslovitz/ScenariuszDlaMoichSasiadow.tex} \newpage
+\subfile{./src/songs/Myslovitz/SciacWysokieDrzewa.tex} \newpage
+\subfile{./src/songs/Myslovitz/SiodmyKoktajl.tex} \newpage
+\subfile{./src/songs/Myslovitz/SprzedawcyMarzen.tex} \newpage
+\subfile{./src/songs/Myslovitz/SrebrnaNitkaCiszy.tex} \newpage
+\subfile{./src/songs/Myslovitz/SzklanyCzlowiek.tex} \newpage
+\subfile{./src/songs/Myslovitz/Telefon.tex} \newpage
+\subfile{./src/songs/Myslovitz/Uciekinier.tex} \newpage
+\subfile{./src/songs/Myslovitz/W10SekundPrzezCaleZycie.tex} \newpage
+\subfile{./src/songs/Myslovitz/WDeszczuMalenkichZoltychKwiatow.tex} \newpage
+\subfile{./src/songs/Myslovitz/WielkiBlekit.tex} \newpage
+\subfile{./src/songs/Myslovitz/WiezaMelancholii.tex} \newpage
+\subfile{./src/songs/Myslovitz/Zamiana.tex} \newpage
+\subfile{./src/songs/Myslovitz/ZaZamknietymiOczami.tex} \newpage
+\subfile{./src/songs/Myslovitz/Zgon.tex} \newpage
+\subfile{./src/songs/Myslovitz/ZRozmyslanPrzySniadaniu.tex} \newpage
+\subfile{./src/songs/Myslovitz/ZTwarzaMarilynMonroe.tex} \newpage
+\subfile{./src/songs/Myslovitz/ZwyklyDzien.tex} \newpage
+\subfile{./src/songs/NocnyKochanek/Andrzela.tex} \newpage
+\subfile{./src/songs/NocnyKochanek/KonNaBialymRycerzu.tex} \newpage
+\subfile{./src/songs/O.A.R/LoveIsWorthTheFall.tex} \newpage
+\subfile{./src/songs/PidzamaPorno/NiktTakPieknieNieMowilZeSieBoiMilosci.tex} \newpage
+\subfile{./src/songs/PidzamaPorno/Pryszcze.tex} \newpage
+\subfile{./src/songs/PidzamaPorno/Wodka.tex} \newpage
+\subfile{./src/songs/PiotrRogucki/AMy.tex} \newpage
+\subfile{./src/songs/PiotrRogucki/Mala.tex} \newpage
+\subfile{./src/songs/PiotrRogucki/PiosenkaPisanaNoca.tex} \newpage
+\subfile{./src/songs/Queen/TooMuchLoveWillKillYou.tex} \newpage
+\subfile{./src/songs/Rammstein/Diamant.tex} \newpage
+\subfile{./src/songs/Rammstein/OhneDich.tex} \newpage
+\subfile{./src/songs/Rammstein/Seemann.tex} \newpage
+\subfile{./src/songs/Rammstein/StirbNichtVorMir.tex} \newpage
+\subfile{./src/songs/Rotary/NaJednejZDzikichPlaz.tex} \newpage
+\subfile{./src/songs/RufusWainwright/Hallelujah.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/AchKiedyZnowuRuszaDlaMnieDni.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/BieszczadzkieAnioly.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/CzarnyBluesOCzwartejNadRanem.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/CzasemNagleSmutniejesz.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/CzasPlynieIZabijaRany.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/czlowiekczlowiekowi.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/CzyWarto.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/DokadidzieszDoslonca.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Dolinawdlugichcieniach.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/do-ostatniej-pestki.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Dziekczynienie.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Gloria.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/GlupiGienek.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Jak.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/JestJuzZaPozno-NieJestZaPozno.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/KimWlasciwieBylaTaPieknaPani.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Komunia.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Koncert.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/leluchow.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/MiejskaStronaKsiezyca.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/ModlitwaKoncaMojegoWieku.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/NieBrooklinskiMost.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Niemowa.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/NieRozdziobiaNasKruki.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/OnaSobieTegoNieZyczy.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/OpadlyMgly.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PiesnNaWyjscie.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PiosenkaDlaRobotnikaRannejZmiany.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PiosenkaDlaWojtkaBellona.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PiosenkaZauroczonego.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PodKatemOstrym.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PoStrunachIdeDoNieba.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PrzebylemNocWlasnie.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/PrzydaSieTakaChwila.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Samotnosc.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/sanctus.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Tak.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/TangoTriste.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/TuAsfaltSieKonczy.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/WedrowkaZycieJestCzlowieka.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/WierszKsiezycowy.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/WojtkaBellonaOstatniaZiemskaPodrozDoWlodawy.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/ZabraknieCiPsa.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/ZNimBedzieszSzczesliwsza.tex} \newpage
+\subfile{./src/songs/StareDobreMalzenstwo/Zobaczysz.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/ChoryNaWszystko.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/CzarnyChlebiCzarnaKa.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/DzienDobryKochamCie.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/NaPogrzebKrola.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/Ostatki-NieWidziszStawki.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/PilaTango.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/Raissa.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/ZebyZTobaByc.tex} \newpage
+\subfile{./src/songs/StrachyNaLachy/ZyjeWKraju.tex} \newpage
+\subfile{./src/songs/TheAnimals/HouseOfTheRisingSun.tex} \newpage
+\subfile{./src/songs/TheRasmus/OctoberAndApril.tex} \newpage
+\subfile{./src/songs/TheWarpZone/OneRing.tex} \newpage
+\subfile{./src/songs/Wilki/Baska.tex} \newpage
+\subfile{./src/songs/ZabiliMiZolwia/Wiosna.tex} \newpage
+\subfile{./src/songs/Religijne/AbbaOjcze.tex} \newpage
+\subfile{./src/songs/Religijne/AveMaria.tex} \newpage
+\subfile{./src/songs/Religijne/Barka.tex} \newpage
+\subfile{./src/songs/Religijne/BogJestMiloscia.tex} \newpage
+\subfile{./src/songs/Religijne/ChwalaCzesc.tex} \newpage
+\subfile{./src/songs/Religijne/chwale-ciebie-panie.tex} \newpage
+\subfile{./src/songs/Religijne/DotknijPanie.tex} \newpage
+\subfile{./src/songs/Religijne/DuchuMilosci.tex} \newpage
+\subfile{./src/songs/Religijne/Fundament.tex} \newpage
+\subfile{./src/songs/Religijne/GdyKleczePrzedToba.tex} \newpage
+\subfile{./src/songs/Religijne/GdyUczniowPosylalPan.tex} \newpage
+\subfile{./src/songs/Religijne/Golgoto.tex} \newpage
+\subfile{./src/songs/Religijne/GotujmyDrogePanu.tex} \newpage
+\subfile{./src/songs/Religijne/GwiazdoZaranna.tex} \newpage
+\subfile{./src/songs/Religijne/JakCiDziekowac.tex} \newpage
+\subfile{./src/songs/Religijne/JedenJestTylkoPan.tex} \newpage
+\subfile{./src/songs/Religijne/Jerycho.tex} \newpage
+\subfile{./src/songs/Religijne/JeszczeDoCiebiePowroce.tex} \newpage
+\subfile{./src/songs/Religijne/JezusDajeNamZbawienie.tex} \newpage
+\subfile{./src/songs/Religijne/Jezus-NAjwyzszeImie.tex} \newpage
+\subfile{./src/songs/Religijne/LudTwojPanieLudPielgrzymi.tex} \newpage
+\subfile{./src/songs/Religijne/magnificat.tex} \newpage
+\subfile{./src/songs/Religijne/MalenkaMilosc.tex} \newpage
+\subfile{./src/songs/Religijne/MatkoKtoraNasZnasz.tex} \newpage
+\subfile{./src/songs/Religijne/MemuBogu.tex} \newpage
+\subfile{./src/songs/Religijne/MiloscTwa.tex} \newpage
+\subfile{./src/songs/Religijne/Misericordias.tex} \newpage
+\subfile{./src/songs/Religijne/NiechajZstapiDuchTwoj.tex} \newpage
+\subfile{./src/songs/Religijne/NieMamNic.tex} \newpage
+\subfile{./src/songs/Religijne/Niepokalana.tex} \newpage
+\subfile{./src/songs/Religijne/Ogrody.tex} \newpage
+\subfile{./src/songs/Religijne/OkazMiBoze.tex} \newpage
+\subfile{./src/songs/Religijne/PanBliskoJest.tex} \newpage
+\subfile{./src/songs/Religijne/Panie,DodajMiSkrzydel.tex} \newpage
+\subfile{./src/songs/Religijne/PanieDoKogozPojdziemyDzis.tex} \newpage
+\subfile{./src/songs/Religijne/PanieMojPrzychodzeDzis.tex} \newpage
+\subfile{./src/songs/Religijne/PanieProszePrzyjdz.tex} \newpage
+\subfile{./src/songs/Religijne/PanieProszeSpraw.tex} \newpage
+\subfile{./src/songs/Religijne/PanieTwojTron.tex} \newpage
+\subfile{./src/songs/Religijne/PanJestPasterzemMoim.tex} \newpage
+\subfile{./src/songs/Religijne/PanWywyzszony.tex} \newpage
+\subfile{./src/songs/Religijne/PodarujMiPanie.tex} \newpage
+\subfile{./src/songs/Religijne/PojdeDoNiebaPiechota.tex} \newpage
+\subfile{./src/songs/Religijne/PoslijMnie.tex} \newpage
+\subfile{./src/songs/Religijne/PowiedzLudziomZeKochamIch.tex} \newpage
+\subfile{./src/songs/Religijne/PozwolMiPrzyjscDoCiebie.tex} \newpage
+\subfile{./src/songs/Religijne/SantoSubito.tex} \newpage
+\subfile{./src/songs/Religijne/SerceWielkieNamDaj.tex} \newpage
+\subfile{./src/songs/Religijne/SluchajIzraelu.tex} \newpage
+\subfile{./src/songs/Religijne/SpocznijNaNasDuchuPana.tex} \newpage
+\subfile{./src/songs/Religijne/Sutanna.tex} \newpage
+\subfile{./src/songs/Religijne/Swiety.tex} \newpage
+\subfile{./src/songs/Religijne/Szachownica.tex} \newpage
+\subfile{./src/songs/Religijne/TakMnieSkrusz.tex} \newpage
+\subfile{./src/songs/Religijne/TobieChorAniolow.tex} \newpage
+\subfile{./src/songs/Religijne/TyPanie.tex} \newpage
+\subfile{./src/songs/Religijne/UbiCaritas.tex} \newpage
+\subfile{./src/songs/Religijne/Uciekali.tex} \newpage
+\subfile{./src/songs/Religijne/UwielbiajDuszoMojaPana.tex} \newpage
+\subfile{./src/songs/Religijne/WierzeWCiebiePAnie.tex} \newpage
+\subfile{./src/songs/Religijne/WKragPrzezCalySwiat.tex} \newpage
+\subfile{./src/songs/Religijne/WKruszynieChleba.tex} \newpage
+\subfile{./src/songs/Religijne/WLekkimPowiewie.tex} \newpage
+\subfile{./src/songs/Religijne/WspanialyDawcoMilosci.tex} \newpage
+\subfile{./src/songs/Religijne/WszystkieNarody.tex} \newpage
+\subfile{./src/songs/Religijne/WWielkimPokojuINadziei.tex} \newpage
+\subfile{./src/songs/Religijne/ZabierzeszMnie.tex} \newpage
+\subfile{./src/songs/Religijne/ZmartwychwstalPan.tex} \newpage
+\subfile{./src/songs/Religijne/ZRozancemWReku.tex} \newpage
+\subfile{./src/songs/Koledy/BogsieRodzi.tex} \newpage
+\subfile{./src/songs/Koledy/CichaNoc.tex} \newpage
+\subfile{./src/songs/Koledy/DzisiajWBetlejem.tex} \newpage
+\subfile{./src/songs/Koledy/GdySieChrystusRodzi.tex} \newpage
+\subfile{./src/songs/Koledy/JezusMalusienki.tex} \newpage
+\subfile{./src/songs/Koledy/LulajzeJezuniu.tex} \newpage
+\subfile{./src/songs/Koledy/PojdzmyWszyscyDoStajenki.tex} \newpage
+\subfile{./src/songs/Koledy/PrzybiezelidoBetlejempasterze.tex} \newpage
+\subfile{./src/songs/Koledy/WsrodNocnejCiszy.tex} \newpage
+\subfile{./src/songs/Dzieciece/BialyWalczyk.tex} \newpage
+\subfile{./src/songs/Dzieciece/PieskiMaleDwa.tex} \newpage
+\subfile{./src/songs/Dzieciece/SzczotkaPasta.tex} \newpage
+\subfile{./src/songs/Inne/MorskieOpowiesci.tex} \newpage
+Statystyki: \newline
+\TabPositions{9cm}
+{\footnotesize
+\textbf{Wykonawca - Album  \tab Liczba piosenek} 
+
+
+ Adele-"21"  \tab 1 \newline
+ Chłopcy Z Placu Broni-"O! Ela"  \tab 2 \newline
+ Coma-"Pierwsze Wyjście Z Mroku"  \tab 3 \newline
+ Coma-"Zaprzepaszczone Siły Wielkiej Armii Świętych Znaków"  \tab 2 \newline
+ Czerwone Gitary-"Dzień Jeden W Roku"  \tab 1 \newline
+ Dziecięce  \tab 3 \newline
+ Green Day-"American Idiot"  \tab 1 \newline
+ happysad-"Ciepło-Zimno"  \tab 2 \newline
+ happysad-"Demo"  \tab 1 \newline
+ happysad-"Mów Mi Dobrze"  \tab 2 \newline
+ happysad-"Nieprzygoda"  \tab 2 \newline
+ happysad-"Podróże Z I Pod Prąd"  \tab 3 \newline
+ happysad-"Wszystko Jedno"  \tab 8 \newline
+ Ich Troję-"Po Piate - A Niech Gadają"  \tab 1 \newline
+ Inne  \tab 1 \newline
+ Ira-"Mój Dom"  \tab 1 \newline
+ Jacek Kaczmarski-"Krzyk"  \tab 1 \newline
+ James Blunt-"Back to Bedlam"  \tab 1 \newline
+ Kazik-"Yugoton"  \tab 1 \newline
+ Kolędy  \tab 9 \newline
+ Kopruch  \tab 1 \newline
+ Kult-"Hurra!"  \tab 1 \newline
+ Kult-"Ostateczny Krach Systemu Korporacji"  \tab 1 \newline
+ Kult-"Spokojnie"  \tab 1 \newline
+ Kult-"Tata Kazika"  \tab 1 \newline
+ Lady Pank-"Łowcy Głów"  \tab 1 \newline
+ Lady Pank-"Tacy Sami"  \tab 1 \newline
+ Lady Pank-"Zawsze Tam Gdzie TY"  \tab 1 \newline
+ Mika-"Life In A Cartoon Motion"  \tab 1 \newline
+ Mika-"Life In Cartoon Motion"  \tab 2 \newline
+ Mika-"The Boy Who Knew Too Much"  \tab 1 \newline
+ Musicale-"Kraina Lodu"  \tab 1 \newline
+ Musicale-"Les Miserables"  \tab 2 \newline
+ Musicale-"Upiór W Operze"  \tab 2 \newline
+ My Chemical Romance-"The Black Parade"  \tab 1 \newline
+ Myslovitz-"1.577"  \tab 2 \newline
+ Myslovitz-"Happiness Is Easy"  \tab 4 \newline
+ Myslovitz-"Korova Milky Bar"  \tab 10 \newline
+ Myslovitz-"Miłość W Czasach Popkultury"  \tab 13 \newline
+ Myslovitz-"Myslovitz"  \tab 3 \newline
+ Myslovitz-"Nieważne Jak Wysoko Jesteśmy"  \tab 3 \newline
+ Myslovitz-"Sun Machine"  \tab 5 \newline
+ Myslovitz-"Z Rozmyślań Przy Śniadaniu"  \tab 12 \newline
+ Myslovitz-"Z Rozmyślań Przy Śniadaniu"  \tab 1 \newline
+ Nocny Kochanek-"Randka W Ciemność"  \tab 2 \newline
+ O.A.R-"Twilight Soundtrack"  \tab 1 \newline
+ Pidżama Porno-"Bułgarskie Centrum Hujozy"  \tab 2 \newline
+ Pidżama Porno-"Marchef w Butonierce"  \tab 1 \newline
+ Piotr Rogucki-"90-2003"  \tab 2 \newline
+ Piotr Rogucki-"Loki - Wizja Dżwięku"  \tab 1 \newline
+ Queen-"Made In Heaven"  \tab 1 \newline
+ Rammstein-"Herzeleid"  \tab 1 \newline
+ Rammstein-"Rammstein"  \tab 1 \newline
+ Rammstein-"Reise Reise"  \tab 1 \newline
+ Rammstein-"Rosenrot"  \tab 1 \newline
+ Religijne  \tab 69 \newline
+ Rotary-"Rotary"  \tab 1 \newline
+ Rufus Wainwright-"Shrek Soundtrack"  \tab 1 \newline
+ Stare Dobre Małżeństwo-"aaa"  \tab 1 \newline
+ Stare Dobre Małżeństwo-"Bieszczadzkie Anioły"  \tab 5 \newline
+ Stare Dobre Małżeństwo-"Czarny Blues O Czwartej Nad Ranem"  \tab 2 \newline
+ Stare Dobre Małżeństwo-"Dla Wszystkich Starczy Miejsca"  \tab 9 \newline
+ Stare Dobre Małżeństwo-"Dolina W Długich Cieniach"  \tab 6 \newline
+ Stare Dobre Małżeństwo-"Krzysztof Myszkowski"  \tab 1 \newline
+ Stare Dobre Małżeństwo-"Latawce Pogodnych Dni"  \tab 3 \newline
+ Stare Dobre Małżeństwo-"Makatki"  \tab 2 \newline
+ Stare Dobre Małżeństwo-"Miejska Strona Księżyca"  \tab 5 \newline
+ Stare Dobre Małżeństwo-"Niebieska Tancbuda"  \tab 6 \newline
+ Stare Dobre Małżeństwo-"Niebieska Tańcbuda"  \tab 2 \newline
+ Stare Dobre Małżeństwo-"Pod Wielkim Dachem Nieba"  \tab 3 \newline
+ Strachy Na Lachy-"doDekafonia"  \tab 3 \newline
+ Strachy Na Lachy-"Grabaż I Strachy Na Lachy"  \tab 1 \newline
+ Strachy Na Lachy-"Piła Tango"  \tab 4 \newline
+ Strachy Na Lachy-"TO"  \tab 1 \newline
+ The Animals-"The Animals"  \tab 1 \newline
+ The Rasmus-"Best of 2001–2009"  \tab 1 \newline
+ The Warp Zone  \tab 1 \newline
+ Wilki-"4"  \tab 1 \newline
+ Zabili Mi Żółwia-"Uczucia w Promocji"  \tab 1 \newline
+\newpage\textbf{
+Wykonawca \tab Liczba piosenek} 
+
+
+ Adele  \tab 1 \newline
+ Chłopcy Z Placu Broni  \tab 2 \newline
+ Coma  \tab 5 \newline
+ Czerwone Gitary  \tab 1 \newline
+ Dziecięce  \tab 3 \newline
+ Green Day  \tab 1 \newline
+ happysad  \tab 18 \newline
+ Ich Troję  \tab 1 \newline
+ Inne  \tab 1 \newline
+ Ira  \tab 1 \newline
+ Jacek Kaczmarski  \tab 1 \newline
+ James Blunt  \tab 1 \newline
+ Kazik  \tab 1 \newline
+ Kolędy  \tab 9 \newline
+ Kopruch  \tab 1 \newline
+ Kult  \tab 4 \newline
+ Lady Pank  \tab 3 \newline
+ Mika  \tab 4 \newline
+ Musicale  \tab 5 \newline
+ My Chemical Romance  \tab 1 \newline
+ Myslovitz  \tab 53 \newline
+ Nocny Kochanek  \tab 2 \newline
+ O.A.R  \tab 1 \newline
+ Pidżama Porno  \tab 3 \newline
+ Piotr Rogucki  \tab 3 \newline
+ Queen  \tab 1 \newline
+ Rammstein  \tab 4 \newline
+ Religijne  \tab 69 \newline
+ Rotary  \tab 1 \newline
+ Rufus Wainwright  \tab 1 \newline
+ Stare Dobre Małżeństwo  \tab 45 \newline
+ Strachy Na Lachy  \tab 9 \newline
+ The Animals  \tab 1 \newline
+ The Rasmus  \tab 1 \newline
+ The Warp Zone  \tab 1 \newline
+ Wilki  \tab 1 \newline
+ Zabili Mi Żółwia  \tab 1 \newline
+
+ }
+
+
+ \end{document}
